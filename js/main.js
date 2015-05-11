@@ -65,7 +65,7 @@ function imgMix(){
 	var afterImgData = Tcontext2.getImageData(0, 0, userImg2.width, userImg2.height);;
 
 	for(var i = 0; i < originImgData1.data.length; i=i+1){
-	   afterImgData.data[i] = parseInt((originImgData1.data[i]*0.3 + originImgData2.data[i]*1.7)/2);
+		afterImgData.data[i] = parseInt((originImgData1.data[i]*0.3 + originImgData2.data[i]*1.7)/2);
 	}
 
 	Tcontext1.putImageData(afterImgData, 0, 0);
