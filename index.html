@@ -1,0 +1,82 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0,initial-scale=0.7, user-scalable=1">
+
+<script src="js/jquery.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="bootstrap/flat/css/flat-ui.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<title>ImageMix</title>
+
+<meta property="og:title" content="ImageMix">
+<meta property="og:url" content="https://nabettu.github.io/ImageMix" >
+<meta property="og:site_name" content="ImageMix" />
+<meta property="og:description" content="画像を合成するサイト。|ImageMix" />
+<meta property="og:image" content="img/ogp_logo.png">
+<meta property="og:type" content="Website">
+<meta property="fb:admins" content="1667345770" >
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@nabettu">
+<meta name="twitter:creator" content="@nabettu">
+<meta name="twitter:title" content="ImageMix">
+<meta name="twitter:description" content="画像を合成するサイト。|ImageMix">
+<meta name="twitter:image" content="img/ogp_logo.png">
+
+<link href="img/ogp_logo.png" rel="apple-touch-icon" type="image/png" />
+<meta name="keywords" content="Canvas,ImageProcessing">
+<meta name="description" content="画像を合成するサイト。">
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1484126635201189',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="title">Image Mix By Canvas</div>
+<div class="contents">
+
+<h5>select 2 image for Mix</h5>
+<input class="fullform fileUpBtn form-control" id="afile1" type="file" name="img" accept="image/*">
+<input class="fullform fileUpBtn form-control" id="afile2" type="file" name="img" accept="image/*">
+
+<div class="funcBtn btn btn-info selectBtn" onclick="imgMix();">mix it</div>
+
+<div id="sizeNotice" class="alert alert-danger alert-dismissible" role="alert" style="display:none;">
+  reduction image cuz your image is too large
+</div>
+
+<img id="resultImg">
+
+<script src="js/main.js"></script>
+
+</div>
+</div>
+</body>
+</html>

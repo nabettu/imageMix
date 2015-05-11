@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: #000000;
+}
+
+.container-fluid{
+    margin: 10px;
+}
+
+.contents{
+    max-width : 1080px;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 200%;
+}
+
+.imgContent{
+	width:45%;
+}
+
+.inline{
+    display: inline-block;
+    _display: inline;
+}
+
+.btnGroup{
+    border :solid 1px #999999;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 10px 0px 10px;
+}
+
+.funcBtn{
+    width:40%;
+    margin: auto;
+}
+
+.centerGroup{
+    text-align: center;
+}
+
+
+img {
+	width:100%;
+    margin: 5px;
+}
+
+input {
+    width:60px;
+    margin:0px 5px 10px 5px;
+}
